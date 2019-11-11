@@ -1,5 +1,3 @@
-#include <iostream>
-#include <vector>
 #include "planilla.h"
 #include "progression.h"
 #include "airplane.h"

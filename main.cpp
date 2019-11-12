@@ -29,31 +29,31 @@ void exercise1() {
 void exercise2() {
 	std::cout << "\nExercise #2\n";
 	arithmetic_progression_t ap(2);
-    ap.print_progression(4);
-    std::cout << std::endl;
-    geometric_progression_t gp(2);
-    gp.print_progression(8);
-    std::cout << std::endl;
-    fibonacci_progression_t fp(0);
-    fp.print_progression(6);
-    std::cout << std::endl;
+  ap.print_progression(4);
+  std::cout << std::endl;
+  geometric_progression_t gp(2);
+  gp.print_progression(8);
+  std::cout << std::endl;
+  fibonacci_progression_t fp(0);
+  fp.print_progression(6);
+  std::cout << std::endl;
 }
 
 void exercise3() {
 	std::cout << "\nExercise #3\n";
 	passenger_t p1{"Juan", "Perez", "address1"};
-    passenger_t p2{"Jose", "Ramos", "address2"};
-    passenger_t p3{"Mario", "Diaz", "address3"};
-    airplane_ticket_t t1 {"f1", "11/11/2019", &p1, "Lima", "Iquito"};
-    airplane_ticket_t t2 {"f2", "11/11/2019", &p2, "Lima", "Arequipa"};
-    airplane_ticket_t t3 {"f3", "11/11/2019", &p3, "Cuzco", "Quito"};
-    airplane_ticket_t t4 {"f1", "11/11/2019", &p1, "Lima", "Tacna"};
-    std::vector<airplane_ticket_t> tickets {t1, t2, t3, t4};
+  passenger_t p2{"Jose", "Ramos", "address2"};
+  passenger_t p3{"Mario", "Diaz", "address3"};
+  airplane_ticket_t t1 {"f1", "11/11/2019", &p1, "Lima", "Iquito"};
+  airplane_ticket_t t2 {"f2", "11/11/2019", &p2, "Lima", "Arequipa"};
+  airplane_ticket_t t3 {"f3", "11/11/2019", &p3, "Cuzco", "Quito"};
+  airplane_ticket_t t4 {"f1", "11/11/2019", &p1, "Lima", "Tacna"};
+  std::vector<airplane_ticket_t> tickets {t1, t2, t3, t4};
 
-    for (auto& t: tickets)
-        if (t.get_from() == "Lima") {
-			std::cout << t.get_flight_info() << std::endl;
-        }
+  for (auto& t: tickets)
+    if (t.get_from() == "Lima") {
+      std::cout << t.get_flight_info() << std::endl;
+    }
 }
 
 void exercise4() {
